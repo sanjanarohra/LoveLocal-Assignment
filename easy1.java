@@ -7,10 +7,8 @@ public class easy1
         String s = br.readLine();
         s = s.trim();
         int i = s.length()-1;
-        while(i>=0 && !Character.isAlphabetic(s.charAt(i)))
-            i--;
         int count=0;
-        while(i>=0 && Character.isAlphabetic(s.charAt(i)))
+        while(i>=0 && s.charAt(i)!=' ')
         {
             i--;
             count++;
