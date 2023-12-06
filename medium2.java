@@ -10,7 +10,7 @@ public class medium2
         int max_ele1 = 0, count1 = 0;
         int max_ele2 = 0, count2 = 0;
 
-        //to find two elements of highest frequency
+        //to find two elements of highest occurence
         for (int i : arr) {
             if (i == max_ele1) count1++;
             else if (i == max_ele2) count2++;
@@ -31,7 +31,7 @@ public class medium2
             }
         }
 
-        // Count occurrences of the candidates
+        //counting the frequency of the two elements that have maximum occurence
         count1 = 0;
         count2 = 0;
         for (int i : arr) 
@@ -40,7 +40,7 @@ public class medium2
             else if (i == max_ele2) count2++;
         }
 
-        // Check if candidates appear more than ⌊ n/3 ⌋ times
+        //Checking if the two elements appear more than ⌊ n/3 ⌋ times
         int n = arr.length;
         if (count1 > n / 3) result.add(max_ele1);
         if (count2 > n / 3) result.add(max_ele2);
